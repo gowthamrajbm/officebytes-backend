@@ -1,0 +1,90 @@
+<!-- views/pages/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body style="-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;margin:0;padding:0;width:100% !important">
+    <table role="presentation" align="center" lang="en-US" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;width:100%;word-wrap:break-word;background-color:#dde0e6;">
+      <tr>
+        <td style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:12px;color:#495361;padding-top:24px;" align="center">
+
+            <% include ../partials/header %>
+            <!--[if mso]>
+                <center>
+                <table style="mso-table-lspace:0pt;mso-table-rspace:0pt;width: 90%;width:800px;border-collapse:collapse;margin-top: 25px">
+                <![endif]-->
+            <table role="presentation" align="center" class="mobile-wide" style="mso-table-lspace:0pt;mso-table-rspace:0pt;width: 90%;max-width:800px;border-collapse:collapse;margin-top: 25px">
+    
+                <tr>
+    
+                    <td style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:12px;color:#495361;background-color:#ffffff;padding:50px;">
+    
+                        <table role="presentation" align="center" class="mobile-wide" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;margin: 0; padding: 0 20px!important;width: 100%">
+    
+                            <tr>
+    
+                                <td style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:12px;color:#495361;padding:0;" align="left">
+    
+                                    <table role="presentation" align="center" class="mobile-wide" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse; margin: 0;width: 100%">
+    
+                                        <tr>
+                          
+                                            <td style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:12px;color:#495361;padding:0">
+                        
+                                                <table role="presentation" style="mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:collapse;width:100%;background-color:#ffffff">
+                          
+                                                    <tr>
+                            
+                                                    </tr>
+                          
+                                                </table>
+        
+                          
+                                            </td>
+                      
+                                        </tr>
+                      
+                                        <tr>
+                        
+                                            <td style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:12px;color:#495361;background-color:#ffffff;padding:0;">
+                                                <table> 
+                                                    <tbody>
+                                                        <tr><td><p style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:14px;color:#495361;background-color:#ffffff;padding:0;">Hi <%= name %>,</p></td></tr>
+                                                        <tr><td><p style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:14px;color:#495361;background-color:#ffffff;padding:0;">Account created successfully . Click the verify button to confirm your email to start recieving the bytes.</p></td></tr>
+                                                        <tr><td><a style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:14px;color:white;background-color:#d6af02;padding:7px 15px;text-decoration: none" href="<%= verificationLink %>">Click To Verify</a></td></tr>
+                                                        <tr><td><p style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:14px;color:#495361;background-color:#ffffff;padding:0;">Click the verification link if the button does not work :</p></td></tr>
+                                                        <tr><td><a style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:14px;color:#4584db;background-color:#ffffff;padding:15px 0;" href="<%= verificationLink %>"><%= verificationLink %></a></td></tr>  
+                                                        <tr><td><p style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:14px;color:#495361;background-color:#ffffff;padding:0;">The link is valid for only 24 hours.</p></td></tr>                                           
+                                                        <tr><td><p style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:14px;color:#495361;background-color:#ffffff;padding:0;">Kind Regards,</p></td></tr>
+                                                        <tr><td><p style="font-family:'Segoe UI', Helvetica, Arial, sans-serif;font-size:14px;color:#495361;background-color:#ffffff;padding:0;">Officebytes</p></td></tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        
+                                        </tr>
+                                        
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                  
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if mso]>
+                            </table>
+                            </center>
+                            <![endif]--> 
+                      </td>
+                    </tr>
+
+    
+                    <% include ../partials/footer %>
+
+
+                </table>
+  
+            </body> 
+ </html>
